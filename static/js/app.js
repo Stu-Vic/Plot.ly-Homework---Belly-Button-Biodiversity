@@ -26,7 +26,7 @@ function init() {
         // POPULATE DROPDOWN MENU WITH IDs 
         // ----------------------------------
 
-        //  use a forEach to loop over each name in the array data.names to populate dropdowns with IDs
+        //  use a for each to loop over each name in the array data.names to populate dropdowns with IDs
         data.names.forEach((name => {
             var option = idSelect.append("option");
             option.text(name);
