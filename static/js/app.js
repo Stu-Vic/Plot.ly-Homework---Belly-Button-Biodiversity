@@ -45,9 +45,9 @@ function init() {
 // create a function to reset divs to prepare for new data
 function resetData() {
 
-    // ----------------------------------
+    
     // CLEAR THE DATA
-    // ----------------------------------
+    
 
     demographicsTable.html("");
     barChart.html("");
@@ -62,9 +62,9 @@ function plotCharts(id) {
     // read in the JSON data
     d3.json("data/samples.json").then((data => {
 
-        // ----------------------------------
+        
         // POPULATE DEMOGRAPHICS TABLE
-        // ----------------------------------
+        
 
         // filter the metadata for the ID chosen
         var individualMetadata = data.metadata.filter(participant => participant.id == id)[0];
