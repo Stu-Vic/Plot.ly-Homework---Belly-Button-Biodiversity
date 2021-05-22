@@ -89,9 +89,9 @@ function plotCharts(id) {
 
         }); // close forEach
 
-        // --------------------------------------------------
+        
         // RETRIEVE DATA FOR PLOTTING CHARTS
-        // --------------------------------------------------
+        
 
         // filter the samples for the ID chosen
         var individualSample = data.samples.filter(sample => sample.id == id)[0];
@@ -129,9 +129,9 @@ function plotCharts(id) {
         // use the map function to store the IDs with "OTU" for labelling y-axis
         var topOtuIdsFormatted = topOtuIds.map(otuID => "OTU " + otuID);
 
-        // ----------------------------------
+        
         // PLOT BAR CHART
-        // ----------------------------------
+        
 
         // create a trace
         var traceBar = {
@@ -180,9 +180,9 @@ function plotCharts(id) {
         // plot the bar chart to the "bar" div
         Plotly.newPlot("bar", dataBar, layoutBar);
 
-        // ----------------------------------
+        
         // PLOT BUBBLE CHART
-        // ----------------------------------
+        
 
         // create trace
         var traceBub = {
